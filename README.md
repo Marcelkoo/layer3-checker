@@ -2,6 +2,8 @@
 
 Этот скрипт проверяет кошельки на возможность получения дропа от Layer3. Он использует прокси и взаимодействует с API 2Captcha для решения reCAPTCHA.
 
+![image](https://github.com/user-attachments/assets/e3a1d164-bbc3-4f27-9944-85049e9ed14b)
+
 ## Установка
 ```bash
 git clone https://github.com/Marcelkoo/layer3-checker
