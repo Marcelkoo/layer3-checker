@@ -58,7 +58,7 @@ async def solve_recaptcha(site_key, page_url, api_key):
                 )
                 result = await response.json()
                 if result.get('status') == 1:
-                    logging.info(f"reCAPTCHA решена: {result['request']}")
+                    logging.info(f"reCAPTCHA решена")
                     return result['request']
                 elif result.get('status') == 0:
                     logging.debug("Решение капчи еще не готово, повторная попытка...")
