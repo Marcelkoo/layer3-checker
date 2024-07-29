@@ -77,7 +77,7 @@ def parse_allocation(allocation):
 async def perform_get_request(session, wallet_address, proxies, results, max_retries=3):
     recaptcha_token = await solve_recaptcha(site_key, page_url, api_key)
     if recaptcha_token:
-        url = f"https://8zr8yl9lzb.execute-api.eu-central-1.amazonaws.com//eligibility"
+        url = f"https://p5mclho8af.execute-api.eu-central-1.amazonaws.com/production/eligibility?address={wallet_address}&recaptchaToken={recaptcha_token}"
         params = {
             'address': wallet_address,
             'recaptchaToken': recaptcha_token
